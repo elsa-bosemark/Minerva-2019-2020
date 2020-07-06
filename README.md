@@ -9,3 +9,7 @@ I am not sure if this project will run smoothly on the first simulation. If it d
 - there are errors in my code (highly likely, also buttons mights have to be reimplemented into the different files, though I'm not sure) 
 
 That's all I have. If you went though these and the project is still relentlessly crashing or my code doesn't make sense we can always chat ;)
+
+P.S. Idk if you will get this error : ld: framework not found GRPCClient
+But here is a link that addresses that bug: https://stackoverflow.com/questions/46633054/ld-framework-not-found-grpcclient
+
