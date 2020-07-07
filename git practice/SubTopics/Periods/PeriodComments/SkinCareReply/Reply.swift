@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Firestore
+import Firebase
 
 protocol HelpFirestore {
     init?(dictionary:[String:Any])

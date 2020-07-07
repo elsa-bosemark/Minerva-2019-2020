@@ -8,5 +8,9 @@ target 'git practice' do
   # Pods for git practice
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
-pod 'Firestore', :podspec => 'https://storage.googleapis.com/firebase-preview-drop/ios/firestore/0.7.0/Firestore.podspec.json'
+#pod 'Firestore', :podspec => 'https://storage.googleapis.com/firebase-preview-drop/ios/firestore/0.7.0/Firestore.podspec.json'
+pod 'Firebase/Firestore'
+pod 'Firebase/Analytics'
+pod 'Firebase/Database'
+
 end

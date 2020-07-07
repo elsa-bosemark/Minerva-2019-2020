@@ -16,9 +16,11 @@ class Utilities {
         let bottomLine = CALayer()
         
         bottomLine.frame = CGRect(x: 0, y: textfield.frame.height - 2, width: textfield.frame.width, height: 2)
-        
-       // bottomLine.backgroundColor = UIColor.init(red: 5/255, green: 84/255, blue: 5/255, alpha: 1).cgColor
+      
+        bottomLine.frame = CGRect(x: 0, y: textfield.frame.height - 2, width: textfield.frame.width, height: 2)
 
+       // bottomLine.backgroundColor = UIColor.init(red: 5/255, green: 84/255, blue: 5/255, alpha: 1).cgColor
+        bottomLine.backgroundColor = UIColor.init(red: 255/255, green: 185/255, blue: 142/255, alpha: 1).cgColor
         
         // Remove border on text field
         textfield.borderStyle = .none
@@ -49,6 +51,8 @@ class Utilities {
        // button.backgroundColor = UIColor.white
         button.layer.cornerRadius = 25.0
         //button.tintColor = UIColor.white
+        button.backgroundColor = UIColor.init(red: 255/255, green: 177/255, blue: 198/255, alpha: 1)
+
     }
     
 
@@ -72,5 +76,11 @@ class Utilities {
         label.tintColor = UIColor.black
     }*/
 
-    
+    static func isPasswordValid(_ password : String) -> Bool {
+        
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
+        //has to contain 8 characters, a capital and lowercase letter, and a special character
+        return passwordTest.evaluate(with: password)
+    }
 }
+

@@ -28,6 +28,10 @@
 		3F64FA6623DA22D700276677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F64FA6423DA22D700276677 /* LaunchScreen.storyboard */; };
 		3F99EF82244ABF1E00BC4D78 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99EF81244ABF1E00BC4D78 /* WelcomeViewController.swift */; };
 		55096977F931CA50BA2A1AA5 /* Pods_git_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B1038504D75F3AEE409E29 /* Pods_git_practice.framework */; };
+		AC23981B24B4EB5B002F2065 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23981A24B4EB5B002F2065 /* LoginViewController.swift */; };
+		AC23981D24B4EB65002F2065 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23981C24B4EB65002F2065 /* SignUpViewController.swift */; };
+		AC23981F24B4EB72002F2065 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23981E24B4EB72002F2065 /* ViewController.swift */; };
+		AC23982124B4EB79002F2065 /* ReferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23982024B4EB79002F2065 /* ReferViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +59,10 @@
 		3F64FA6723DA22D700276677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F99EF81244ABF1E00BC4D78 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		6DE4700F72311B8518E2883B /* Pods-git practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-git practice.debug.xcconfig"; path = "Target Support Files/Pods-git practice/Pods-git practice.debug.xcconfig"; sourceTree = "<group>"; };
+		AC23981A24B4EB5B002F2065 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AC23981C24B4EB65002F2065 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AC23981E24B4EB72002F2065 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC23982024B4EB79002F2065 /* ReferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferViewController.swift; sourceTree = "<group>"; };
 		C7B1038504D75F3AEE409E29 /* Pods_git_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_git_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,6 +170,7 @@
 				3DC2AF6A244E318100692D3C /* Helpers */,
 				3F99EF81244ABF1E00BC4D78 /* WelcomeViewController.swift */,
 				3D336905245260EB005172ED /* HomeVC.swift */,
+				AC7E577924B4D0EE00D29856 /* userAuthentication */,
 				3DCBC2912457A3D0004D9FFF /* SubTopics */,
 				3F64FA5F23DA22D200276677 /* Main.storyboard */,
 				3F64FA6223DA22D700276677 /* Assets.xcassets */,
@@ -179,6 +188,17 @@
 				1E66EBC92D6A1E3B10D43D87 /* Pods-git practice.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC7E577924B4D0EE00D29856 /* userAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				AC23981A24B4EB5B002F2065 /* LoginViewController.swift */,
+				AC23981C24B4EB65002F2065 /* SignUpViewController.swift */,
+				AC23981E24B4EB72002F2065 /* ViewController.swift */,
+				AC23982024B4EB79002F2065 /* ReferViewController.swift */,
+			);
+			path = userAuthentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,13 +323,17 @@
 				3D639E85244E24F100D176F9 /* Comment.swift in Sources */,
 				3DCBC2902457A3CA004D9FFF /* SkinCareTVC.swift in Sources */,
 				3D826B462457BF1100EC4ABD /* gifCode.swift in Sources */,
+				AC23981D24B4EB65002F2065 /* SignUpViewController.swift in Sources */,
 				3D3324A92454DBEB005CCFCD /* ShavingChatTVC.swift in Sources */,
 				3D3369042450A8E8005172ED /* SkinCareReplyTVC.swift in Sources */,
 				3D336906245260EB005172ED /* HomeVC.swift in Sources */,
 				3DCBC28E2457A3B8004D9FFF /* HairCareTVC.swift in Sources */,
 				3D33690B245273FE005172ED /* PeriodsTVC.swift in Sources */,
 				3DDAA8C1244E1061008E09FE /* SkinCareCommentsTableVC.swift in Sources */,
+				AC23981F24B4EB72002F2065 /* ViewController.swift in Sources */,
 				3D3369022450A756005172ED /* Reply.swift in Sources */,
+				AC23982124B4EB79002F2065 /* ReferViewController.swift in Sources */,
+				AC23981B24B4EB5B002F2065 /* LoginViewController.swift in Sources */,
 				3D3324A72454DB4F005CCFCD /* ShavingTVC.swift in Sources */,
 				3DC2AF68244E316200692D3C /* Utilities.swift in Sources */,
 				3F64FA5C23DA22D200276677 /* SceneDelegate.swift in Sources */,

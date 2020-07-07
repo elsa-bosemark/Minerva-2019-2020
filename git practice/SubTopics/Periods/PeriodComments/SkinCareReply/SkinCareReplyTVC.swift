@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import Firestore
-
+import Firebase
 
 class SkinCareReplyTVC: UITableViewController {
 

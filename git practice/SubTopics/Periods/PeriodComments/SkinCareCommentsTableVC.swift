@@ -7,18 +7,19 @@
 //
 
 import UIKit
-import Firestore
+import FirebaseFirestore
+import Firebase
 
 class SkinCareTableVC: UITableViewController {
 
-      var db:Firestore!
+    var db: Firestore!
         
         var sweetArray = [Sweet]()
         
         override func viewDidLoad() {
             super.viewDidLoad()
             
-            db = Firestore.firestore()
+            db = Firebase.Firestore.firestore()
             loadData()
             checkForUpdates()
             
@@ -85,7 +86,6 @@ class SkinCareTableVC: UITableViewController {
                     let content = composeAlert.textFields?.last?.text {
                     
                     let newSweet = Sweet(name: name, content: content, timeStamp: Date())
-                    
                     var ref: DocumentReference? = nil
                     ref =  self.db.collection("Sweet").addDocument(data: newSweet.dictionary){
                         error in
