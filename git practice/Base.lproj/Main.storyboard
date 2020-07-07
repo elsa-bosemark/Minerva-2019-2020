@@ -3073,7 +3073,7 @@ Eventually I figured out how to deal with my period with the help of the interne
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yj4-t6-z1T">
                                                 <rect key="frame" x="0.0" y="240" width="331.33333333333331" height="60"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email of referer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H0X-8a-394">
                                                 <rect key="frame" x="0.0" y="320" width="331.33333333333331" height="60"/>
@@ -3157,6 +3157,94 @@ Eventually I figured out how to deal with my period with the help of the interne
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NtT-09-S4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1659" y="797"/>
+        </scene>
+        <!--Refer View Controller-->
+        <scene sceneID="xAY-Ee-ksk">
+            <objects>
+                <viewController id="KDz-kg-5wv" customClass="ReferViewController" customModule="Minerva_GIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="64G-6T-opY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nvq-Iy-iyR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ySA-vc-K4n">
+                                        <rect key="frame" x="50" y="20" width="332" height="300"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GbO-FW-0UA">
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="x3T-Rm-h3m"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tIi-jL-Emn">
+                                                <rect key="frame" x="0.0" y="50" width="332" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MhJ-TN-zQi">
+                                                <rect key="frame" x="0.0" y="100" width="332" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="School" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hw6-Or-2eQ">
+                                                <rect key="frame" x="0.0" y="150" width="332" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DV5-QR-FVP">
+                                                <rect key="frame" x="0.0" y="200" width="332" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgm-7b-GHt">
+                                                <rect key="frame" x="0.0" y="250" width="332" height="50"/>
+                                                <state key="normal" title="Refer"/>
+                                                <connections>
+                                                    <action selector="referButtonTapped:" destination="KDz-kg-5wv" eventType="touchUpInside" id="obi-Us-acI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="MhJ-TN-zQi" firstAttribute="height" secondItem="GbO-FW-0UA" secondAttribute="height" id="0dt-7N-Ls8"/>
+                                            <constraint firstItem="kgm-7b-GHt" firstAttribute="height" secondItem="GbO-FW-0UA" secondAttribute="height" id="Bcw-gq-LB7"/>
+                                            <constraint firstItem="GbO-FW-0UA" firstAttribute="leading" secondItem="ySA-vc-K4n" secondAttribute="leading" id="CXh-ek-PA0"/>
+                                            <constraint firstItem="DV5-QR-FVP" firstAttribute="height" secondItem="GbO-FW-0UA" secondAttribute="height" id="Q1U-27-eMf"/>
+                                            <constraint firstItem="tIi-jL-Emn" firstAttribute="height" secondItem="GbO-FW-0UA" secondAttribute="height" id="c9Q-zC-WjZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="GbO-FW-0UA" secondAttribute="trailing" id="crZ-CJ-9K3"/>
+                                            <constraint firstItem="hw6-Or-2eQ" firstAttribute="height" secondItem="GbO-FW-0UA" secondAttribute="height" id="s1s-Ss-P9h"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ySA-vc-K4n" firstAttribute="centerX" secondItem="Nvq-Iy-iyR" secondAttribute="centerX" id="ak4-8F-EYZ"/>
+                                    <constraint firstItem="ySA-vc-K4n" firstAttribute="top" secondItem="Nvq-Iy-iyR" secondAttribute="top" constant="20" id="qGJ-Ax-NtR"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Cwa-Cd-HVo"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="WYP-72-JK0"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ySA-vc-K4n" firstAttribute="width" secondItem="64G-6T-opY" secondAttribute="width" multiplier="0.801932" id="P9n-1Z-4CC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s0d-B0-9W3"/>
+                    </view>
+                    <connections>
+                        <outlet property="Button" destination="kgm-7b-GHt" id="hCW-6Z-X6k"/>
+                        <outlet property="emailTextField" destination="DV5-QR-FVP" id="XeX-BT-gEB"/>
+                        <outlet property="firstNameTextField" destination="GbO-FW-0UA" id="BKY-io-lxX"/>
+                        <outlet property="gradeTextField" destination="MhJ-TN-zQi" id="FNr-Kj-5A9"/>
+                        <outlet property="lastNameTextField" destination="tIi-jL-Emn" id="kpj-sF-cqL"/>
+                        <outlet property="schoolTextField" destination="hw6-Or-2eQ" id="jiR-PP-e0v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XA1-TZ-sMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-897" y="539"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0xO-pl-i4x">
