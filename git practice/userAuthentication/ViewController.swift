@@ -20,15 +20,20 @@ class ViewController: UIViewController {
                Utilities.styleHollowButton(loginButton)
     }
     
-
+    
+    //LOGOUT CODE: just add a button or whatever you want and use the following code:  (i'm not to sure where you would like to have it)
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     
+     @IBAction func logoutButtonPressed(_ sender: Any) {
+         let auth = Auth.auth()
+         do {
+             try auth.signOut()
+         }catch let signOutError as NSError {
+             print ("Error signing out: %@", signOutError)
+         }
+     }
+     
+     */
+    
 
 }
